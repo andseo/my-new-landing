@@ -1,0 +1,103 @@
+/* styles.css */
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #faf3ea;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.navbar {
+    background-color: #f2dec6; /* Change as needed */
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+
+.navbar-logo {
+    width: 50px; /* Adjust as needed */
+    height: auto;
+    margin-right: 10px;
+}
+
+.navbar-title {
+    font-size: 2rem;
+    color: #242121; /* Adjust color as needed */
+    font-weight: bold;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #faf3ea; /* Change as needed */
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    color: #000;
+}
+
+.hero-text span {
+    color: #FFA05F; /* Change as needed */
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.app-links a {
+    display: inline-block;
+    margin-right: 0.5rem;
+    text-decoration: none;
+    color: #fff; /* Change as needed */
+    padding: 0.5rem 1rem;
+}
+
+.app-links .play-store img {
+    width: 250px; /* Adjust the width as needed */
+    height: auto;
+}
+
+.phone-img {
+    width: 200px; /* or any size you prefer */
+    height: auto; /* keeps the aspect ratio intact */
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        align-items: center; /* Centers the items */
+    }
+
+    .hero-text, .hero-image {
+        width: 100%; /* Use the full width */
+        text-align: center; /* Center the text */
+    }
+
+    .phone-img {
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .phone-img.fade-in {
+        opacity: 1;
+    }
+    
+    
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar .cta {
+        margin-top: 1rem;
+    }
+}
